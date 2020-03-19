@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header('Edit Task')">
+</head>
+<body>
+<div class="container">
+    <h1>Edit Task</h1>
+    <form th:action="@{/tasks/update}" th:object="${task}" method="post">
+        <div class="form-group">
+            <input type="hidden" th:field="*{id}" />
+            <label>Title</label>
+            <input type="text" class="form-control" th:field="*{title}" />
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</div>
+</body>
+</html>

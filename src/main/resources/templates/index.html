@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header('Task')">
+</head>
+<body>
+<div class="container">
+    <h1>Tasks</h1>
+    aaa
+    <table class="table table-striped">
+        <tr th:each="task : ${tasks}">
+            <td th:text="${task.title}"></td>
+            <td><a th:href="${'/tasks/edit/' + task.id}">Edit</a></td>
+            <td><a th:href="${'/tasks/delete/' + task.id}">Delete</a></td>
+        </tr>
+    </table>
+    <a href="/tasks/new" class="btn btn-primary" role="button">New</a>
+</div>
+</body>
+</html>

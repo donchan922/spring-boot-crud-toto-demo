@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header('New Task')">
+</head>
+<body>
+<div class="container">
+    <h1>New Task</h1>
+    <form th:action="@{/tasks}" th:object="${task}" method="post">
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" class="form-control" th:field="*{title}">
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+</div>
+</body>
+</html>
