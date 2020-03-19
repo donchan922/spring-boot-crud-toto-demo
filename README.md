@@ -11,9 +11,11 @@
 
 ## Usage
 ```bash
-./gradlew bootRun
+$ git clone https://github.com/donchan922/spring-boot-crud-toto-demo.git
+$ cd spring-boot-crud-toto-demo
+$ ./gradlew bootRun
 ```
-access to http://localhost:8080/tasks
+Access to http://localhost:8080/tasks
 
 ## License
 This software is released under the MIT License.
