@@ -5,13 +5,14 @@
 <body>
 <div class="container">
     <h1>Tasks</h1>
-    aaa
     <table class="table table-striped">
+        <tbody>
         <tr th:each="task : ${tasks}">
-            <td th:text="${task.title}"></td>
-            <td><a th:href="${'/tasks/edit/' + task.id}">Edit</a></td>
-            <td><a th:href="${'/tasks/delete/' + task.id}">Delete</a></td>
+            <td th:text="${task.title}" class="align-bottom"></td>
+            <td><a th:href="${'/tasks/edit/' + task.id}" class="btn btn-primary" role="button">Edit</a></td>
+            <td><a th:href="${'/tasks/delete/' + task.id}" class="btn btn-danger" role="button">Delete</a></td>
         </tr>
+        </tbody>
     </table>
     <a href="/tasks/new" class="btn btn-primary" role="button">New</a>
 </div>
