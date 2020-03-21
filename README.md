@@ -9,6 +9,9 @@
 ![2](https://user-images.githubusercontent.com/31620041/77121648-0b3a9180-6a7f-11ea-8494-1374ffe59f95.png)
 ![3](https://user-images.githubusercontent.com/31620041/77121653-0bd32800-6a7f-11ea-98a5-1daacbddb540.png)
 
+## Requirements
+- Java 8+
+
 ## Usage
 ```bash
 $ git clone https://github.com/donchan922/spring-boot-crud-toto-demo.git
