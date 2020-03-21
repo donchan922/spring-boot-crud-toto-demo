@@ -41,7 +41,7 @@ class DemoControllerTest {
         mockMvc.perform(
                 post("/tasks")
                         .param("id", "1")
-                        .param("title", "hoge"))
+                        .param("title", "Bring an umbrella"))
                 .andExpect(redirectedUrl("/tasks"));
     }
 
@@ -66,7 +66,7 @@ class DemoControllerTest {
         mockMvc.perform(
                 post("/tasks/update")
                         .param("id", "1")
-                        .param("title", "hoge"))
+                        .param("title", "Running"))
                 .andExpect(redirectedUrl("/tasks"));
     }
 
