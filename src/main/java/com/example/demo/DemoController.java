@@ -26,9 +26,9 @@ public class DemoController {
     }
 
     @GetMapping("/tasks/new")
-    public String newTask(Model model) {
+    public String add(Model model) {
         model.addAttribute("task", new Task());
-        return "new";
+        return "add";
     }
 
     @GetMapping("/tasks/edit/{id}")
